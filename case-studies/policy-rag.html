@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Case Study: Insurance Policy RAG Assistant — Willy Kyeni</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="../js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="../index.html" class="brand-mark">
+        <span class="brand-badge">WK</span>
+        <span class="brand-text">Willy Kyeni</span>
+      </a>
+      <a href="../index.html#work" class="nav-cta">All Projects</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="case-hero">
+      <div class="container">
+        <a href="../index.html#work" class="back-link">
+          <i data-lucide="arrow-left"></i>
+          <span>Back to Selected Work</span>
+        </a>
+        <span class="section-kicker">CASE 03 &middot; AUTOMATION, AI &amp; SOFTWARE</span>
+        <h1>Insurance Policy RAG Assistant</h1>
+        <p class="case-lead">
+          A Retrieval-Augmented Generation (RAG) assistant engineered to query dense insurance policy documents and surface accurate, context-grounded answers.
+        </p>
+        <div class="tag-row">
+          <span>Python</span>
+          <span>RAG Architecture</span>
+          <span>Text Chunking</span>
+          <span>Vector Embeddings</span>
+          <span>Prompt Grounding</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="container case-body">
+      <article class="case-block">
+        <h2><span>01 /</span> Problem &amp; Constraints</h2>
+        <p>
+          Insurance policy documents are long, jargon-heavy, and tedious to search manually when verifying coverage limits, exclusions, or claim procedures. General LLMs hallucinate policy terms if queried without strict grounding in the exact policy text.
+        </p>
+      </article>
+
+      <article class="case-block" id="architecture">
+        <h2><span>02 /</span> Architecture &amp; Stack Decisions</h2>
+        <p>
+          Implemented a Retrieval-Augmented Generation pipeline that separates document indexing from answer synthesis, forcing responses to rely exclusively on retrieved policy passages.
+        </p>
+        <div class="arch-diagram">
+          [Policy PDFs] &rarr; [Semantic Chunking + Embeddings] &rarr; [Vector Index]<br />
+          [User Question] &rarr; [Similarity Retrieval (Top-K Clauses)] &rarr; [Grounded Prompt + LLM] &rarr; [Verified Policy Answer]
+        </div>
+      </article>
+
+      <article class="case-block">
+        <h2><span>03 /</span> Engineering &amp; Implementation Highlights</h2>
+        <ul>
+          <li>Tuned document chunk sizes and overlap boundaries so multi-sentence exclusions and coverage conditions remain intact during retrieval.</li>
+          <li>Engineered system prompts instructing the model to decline speculation when a clause is absent from retrieved chunks.</li>
+          <li>Structured a clean modular pipeline so new policy documents can be ingested without rewriting query logic.</li>
+        </ul>
+      </article>
+
+      <article class="case-block">
+        <h2><span>04 /</span> Outcome</h2>
+        <p>
+          Reduced policy clause lookup from manual page-by-page scanning to natural-language queries backed by verifiable source passages.
+        </p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

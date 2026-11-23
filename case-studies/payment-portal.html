@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Case Study: Organizational Web &amp; Payment Portal — Willy Kyeni</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="../js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="../index.html" class="brand-mark">
+        <span class="brand-badge">WK</span>
+        <span class="brand-text">Willy Kyeni</span>
+      </a>
+      <a href="../index.html#work" class="nav-cta">All Projects</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="case-hero">
+      <div class="container">
+        <a href="../index.html#work" class="back-link">
+          <i data-lucide="arrow-left"></i>
+          <span>Back to Selected Work</span>
+        </a>
+        <span class="section-kicker">CASE 02 &middot; WEB &amp; CLIENT PLATFORMS</span>
+        <h1>Organizational Web &amp; Multi-Currency Payment Portal</h1>
+        <p class="case-lead">
+          Building a lightweight WordPress platform optimized for speed and readability, complete with KES and USD Paystack payment flows and custom domain email infrastructure.
+        </p>
+        <div class="tag-row">
+          <span>WordPress</span>
+          <span>Astra Theme</span>
+          <span>Gutenberg Block Editor</span>
+          <span>Paystack (KES/USD)</span>
+          <span>Hostinger Mail</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="container case-body">
+      <article class="case-block">
+        <h2><span>01 /</span> Problem &amp; Constraints</h2>
+        <p>
+          The organization needed a credible digital home capable of accepting contributions from both local supporters in Kenyan Shillings (KES) and international partners in US Dollars (USD), while avoiding bloated page builders that slow down mobile connections.
+        </p>
+      </article>
+
+      <article class="case-block" id="architecture">
+        <h2><span>02 /</span> Architecture &amp; Stack Decisions</h2>
+        <p>
+          Deliberately chose the native <strong>Gutenberg block editor with the Astra theme</strong> over heavy visual builders to keep DOM size minimal and ensure non-technical administrators could publish updates safely.
+        </p>
+        <div class="arch-diagram">
+          [Visitor] &rarr; [Astra + Gutenberg Lightweight Frontend] &rarr; [Currency Selection: KES | USD] &rarr; [Paystack Checkout] &rarr; [Automated Receipt &amp; Domain Follow-Up]
+        </div>
+      </article>
+
+      <article class="case-block">
+        <h2><span>03 /</span> Engineering &amp; Implementation Highlights</h2>
+        <ul>
+          <li>Configured separate KES and USD Paystack payment endpoints so local mobile-money/card users and international cardholders experience frictionless checkout.</li>
+          <li>Provisioned custom domain mailboxes and email marketing templates to establish institutional trust and consistent supporter communication.</li>
+          <li>Built reusable Gutenberg block patterns so internal staff can publish announcements without breaking layout spacing or typography.</li>
+        </ul>
+      </article>
+
+      <article class="case-block">
+        <h2><span>04 /</span> Outcome</h2>
+        <p>
+          Launched a fast, accessible organizational platform supporting seamless local and international payments alongside unified domain email communications.
+        </p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

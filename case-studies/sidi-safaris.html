@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Case Study: Sidi Safaris — Willy Kyeni</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="../js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="../index.html" class="brand-mark">
+        <span class="brand-badge">WK</span>
+        <span class="brand-text">Willy Kyeni</span>
+      </a>
+      <a href="../index.html#work" class="nav-cta">All Projects</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="case-hero">
+      <div class="container">
+        <a href="../index.html#work" class="back-link">
+          <i data-lucide="arrow-left"></i>
+          <span>Back to Selected Work</span>
+        </a>
+        <span class="section-kicker">CASE 01 &middot; WEB &amp; CLIENT PLATFORMS</span>
+        <h1>Sidi Safaris — Destination Itineraries &amp; Reliable Booking Routing</h1>
+        <p class="case-lead">
+          Designing and launching a tourism platform with structured destination itineraries for Maasai Mara, Lake Naivasha, and Mombasa alongside authenticated SMTP inquiry delivery.
+        </p>
+        <div class="tag-row">
+          <span>WordPress</span>
+          <span>Custom Itineraries</span>
+          <span>Contact Form 7</span>
+          <span>WP Mail SMTP</span>
+          <span>Technical SEO</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="container case-body">
+      <article class="case-block">
+        <h2><span>01 /</span> Problem &amp; Constraints</h2>
+        <p>
+          Tour operators lose high-intent travelers when destination details are buried in PDFs or when website inquiry forms silently fail due to unauthenticated server mail. The site needed clear destination packaging, fast mobile performance for international visitors, and guaranteed inbox delivery without expensive third-party booking SaaS fees.
+        </p>
+      </article>
+
+      <article class="case-block" id="architecture">
+        <h2><span>02 /</span> Architecture &amp; Stack Decisions</h2>
+        <p>
+          Selected WordPress for rapid editorial updates by the tour team, paired with structured custom itinerary templates and authenticated SMTP transport rather than default PHP <code>mail()</code>.
+        </p>
+        <div class="arch-diagram">
+          [Traveler Browser] &rarr; [Destination Itinerary Page (SEO-Structured)] &rarr; [Contact Form 7] &rarr; [WP Mail SMTP (Authenticated TLS)] &rarr; [Operations Inbox]
+        </div>
+      </article>
+
+      <article class="case-block">
+        <h2><span>03 /</span> Engineering &amp; Implementation Highlights</h2>
+        <ul>
+          <li>Structured dedicated itinerary flows for Maasai Mara, Lake Naivasha, and Mombasa with clear day-by-day breakdowns and direct inquiry triggers.</li>
+          <li>Configured Contact Form 7 with WP Mail SMTP and proper DNS/sender authentication so booking leads land in the primary inbox instead of spam.</li>
+          <li>Implemented clean heading hierarchy, metadata, and compressed destination visuals to improve organic search discoverability and mobile load speed.</li>
+        </ul>
+      </article>
+
+      <article class="case-block">
+        <h2><span>04 /</span> Outcome</h2>
+        <p>
+          Delivered a production tourism website at <strong>sidisafaris.com</strong> with reliable lead capture, clear multi-destination navigation, and an intuitive admin workflow allowing staff to update tour packages independently.
+        </p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

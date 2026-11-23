@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Case Study: Green Nexus — Willy Kyeni</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="../js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="../index.html" class="brand-mark">
+        <span class="brand-badge">WK</span>
+        <span class="brand-text">Willy Kyeni</span>
+      </a>
+      <a href="../index.html#work" class="nav-cta">All Projects</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="case-hero">
+      <div class="container">
+        <a href="../index.html#work" class="back-link">
+          <i data-lucide="arrow-left"></i>
+          <span>Back to Selected Work</span>
+        </a>
+        <span class="section-kicker">CASE 04 &middot; AUTOMATION, AI &amp; SOFTWARE</span>
+        <h1>Green Nexus — Sustainability Platform &amp; AI Waste Scanner</h1>
+        <p class="case-lead">
+          Full-stack sustainability web application combining an AI-powered waste classification scanner with practical disposal guidance and user engagement workflows.
+        </p>
+        <div class="tag-row">
+          <span>Full-Stack Web</span>
+          <span>AI Vision Classification</span>
+          <span>REST API</span>
+          <span>Responsive UI</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="container case-body">
+      <article class="case-block">
+        <h2><span>01 /</span> Problem &amp; Constraints</h2>
+        <p>
+          Recycling and waste sorting break down at the point of disposal because everyday users are unsure which materials are recyclable, compostable, or hazardous. The application needed a fast, mobile-friendly scanning interface that turns a quick photo into immediate disposal instructions.
+        </p>
+      </article>
+
+      <article class="case-block" id="architecture">
+        <h2><span>02 /</span> Architecture &amp; Stack Decisions</h2>
+        <p>
+          Designed a decoupled client-server flow where the frontend handles camera/image upload compression and renders structured classification cards returned by the AI inference endpoint.
+        </p>
+        <div class="arch-diagram">
+          [Mobile / Web Camera Input] &rarr; [Client Image Optimization] &rarr; [AI Classification API] &rarr; [Category + Disposal Rules + Impact Tracking]
+        </div>
+      </article>
+
+      <article class="case-block">
+        <h2><span>03 /</span> Engineering &amp; Implementation Highlights</h2>
+        <ul>
+          <li>Built a responsive mobile-first scanner interface so users can capture or upload waste items cleanly on low-bandwidth connections.</li>
+          <li>Mapped raw model classification outputs to human-readable waste categories and local disposal recommendations.</li>
+          <li>Designed clear visual feedback states (loading, confidence classification, and fallback guidance) to keep the user experience predictable.</li>
+        </ul>
+      </article>
+
+      <article class="case-block">
+        <h2><span>04 /</span> Outcome</h2>
+        <p>
+          Delivered an end-to-end sustainability prototype demonstrating applied computer vision, clean API integration, and accessible user-centered design.
+        </p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
