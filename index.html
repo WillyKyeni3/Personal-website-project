@@ -1,165 +1,565 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
-    <!-- Add Links here -->
-     <link rel="stylesheet" href="./Css/style.css" >
-     <script src="./Script/script.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Willy Kyeni — Full-Stack Web Developer &amp; Applied Systems Engineer</title>
+  <meta name="description" content="Software engineer and web developer building fast web platforms, payment &amp; email automations, and practical AI tools." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="js/main.js" defer></script>
 </head>
 <body>
-    <!-- header -->
-    <header>
-        <div class="container">
-            <nav>
-                <a href="#home" class="logo">WK</a>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <!-- Navigation -->
+  <header class="site-header" id="top">
+    <div class="container nav-inner">
+      <a href="#top" class="brand-mark">
+        <span class="brand-badge">WK</span>
+        <span class="brand-text">Willy Kyeni</span>
+      </a>
 
-    <!-- hero section -->
-    <section class="hero" id="home">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Willy Kyeni</h1>
-                <p>I am a Software Engineer</p>
-                <a href="#contact" class="btn">Get In Touch</a>
-            </div>
-        </div>
-    </section>
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Adaptable and motivated professional with a Diploma 
-                        in Computer Science from Cooperative University and
-                        currently in Moringa School, specializing in full-stack
-                        development and software engineering. Experienced in 
-                        developing web applications using modern technologies 
-                        and frameworks. Demonstrates strong problem-solving 
-                        abilities and excellent communication skills, with a 
-                        proven track record of working effectively in team environments.</p>
-                </div>
-                <div class="about-image">
-                    <img src="./images/profile.png" alt="Willy Kyeni">
-                </div>
-            </div>
-        </div>
-    </section>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <i data-lucide="menu"></i>
+      </button>
 
-    <!-- Skills Section -->
-    <section class="skills" id="skills">
-        <div class="container">
-            <h2>My Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <h3>Intermediate</h3>
-                    <ul class="skill-list">
-                        <li> HTML</li>
-                        <li> CSS</li>
-                        <li> Graphic Design</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <h3>Beginner</h3>
-                    <ul class="skill-list">
-                        <li> JavaScript</li>
-                        <li> React</li>
-                        <li> Node.js</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+      <nav class="nav-menu" id="navMenu">
+        <a href="#work">Work</a>
+        <a href="#methodology">Approach</a>
+        <a href="#capabilities">Capabilities</a>
+        <a href="#experience">Background</a>
+        <a href="#contact" class="nav-cta">Start a Project</a>
+      </nav>
+    </div>
+  </header>
 
-    <!-- projects Section -->
-    <section class="projects" id="projects">
-        <div class="container">
-            <h2>My Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <img src="/images/project pic 1.jpg" alt="Project 1" class="project-image">
-                    
-                    <div class="project-overlay">
-                        <h3>Produce input Forms</h3>
-                        <p>A responsive page of Produce record input forms for Amtech Technologies</p>
-                        <p>Built with HTML, CSS, JavaScript</p>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="/images/project pic 2.png" alt="Project 2" class="project-image">
-                    
-                    <div class="project-overlay">
-                        <h3>Portfolio Website</h3>
-                        <p>A responsive portfolio website showcasing my design skills and development projects.</p>
-                        <p>Built with HTML, CSS, and JavaScript</p>
-                    </div>
-                </div>
-            </div>
+  <main>
+    <!-- Section 1: Asymmetric Hero & Value Proposition -->
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-main">
+          <div class="eyebrow">
+            <span class="status-dot"></span>
+            <span>WEB ENGINEERING &middot; AUTOMATION &middot; APPLIED AI</span>
+          </div>
+          <h1>I build fast web platforms, automated workflows, and practical AI tools that eliminate manual bottlenecks.</h1>
+          <p class="hero-sub">
+            Software engineer and web developer delivering revenue-ready websites, multi-currency payment and form automations, and AI-backed applications—from initial requirements to production.
+          </p>
+          <div class="hero-actions">
+            <a href="#work" class="btn btn-primary">
+              <span>Explore Selected Work</span>
+              <i data-lucide="arrow-down-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <i data-lucide="terminal"></i>
+              <span>Start a Project</span>
+            </a>
+          </div>
         </div>
-    </section> 
-    <!-- contacts -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                        <div>
-                            <h3>Phone</h3>
-                            <p>+254 712 345 678</p>
-                        
-                            <h3>Email</h3>
-                            <p>willy.kyeni@example.com</p>
-    
-                            <h3>Address</h3>
-                            <p>Nairobi, Kenya</p>
-                        </div>
-                </div>
-            </div>
-        </div>
+
+        <aside class="hero-panel" aria-label="Engineering Focus Summary">
+          <div class="panel-header">
+            <span class="mono-label">SYSTEMS_OVERVIEW.JSON</span>
+            <span class="panel-tag">Nairobi / Mombasa, KE</span>
+          </div>
+          <ul class="metric-list">
+            <li>
+              <div class="metric-icon"><i data-lucide="globe"></i></div>
+              <div>
+                <strong>Web &amp; Payment Platforms</strong>
+                <span>WordPress (Astra/Gutenberg, Elementor), Paystack KES/USD, Technical SEO</span>
+              </div>
+            </li>
+            <li>
+              <div class="metric-icon"><i data-lucide="cpu"></i></div>
+              <div>
+                <strong>Applied AI &amp; Full-Stack</strong>
+                <span>Python RAG Pipelines, AI Vision Scanners, Legacy Refactoring</span>
+              </div>
+            </li>
+            <li>
+              <div class="metric-icon"><i data-lucide="workflow"></i></div>
+              <div>
+                <strong>Operational Automation</strong>
+                <span>Google Apps Script Autoresponders, SMTP/DNS, SharePoint Portals</span>
+              </div>
+            </li>
+          </ul>
+          <div class="panel-footer">
+            <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" rel="noopener noreferrer" class="inline-link">
+              <i data-lucide="github"></i>
+              <span>github.com/YOUR_GITHUB_USERNAME</span>
+              <i data-lucide="external-link"></i>
+            </a>
+          </div>
+        </aside>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-info">
-                    <div class="footer-logo">Willy Kyeni</div>
-                    <p>Software Engineer & Graphic Designer</p>
-                </div>
-                <div class="footer-links">
-                    <h3>Contact</h3>
-                    <ul>
-                        <li> +254 759 136 330</li>
-                        <li> willy.kyeni@gmail.com</li>
-                        <li> Nairobi, Kenya</li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h3>Navigation</h3>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="copyright">
-                <p>&copy; 2025 Willy Kyeni. All Rights Reserved.</p>
-            </div>
+    <!-- Section 2: Filterable Selected Work -->
+    <section class="section" id="work">
+      <div class="container">
+        <div class="section-head split-head">
+          <div>
+            <span class="section-kicker">01 / SELECTED WORK</span>
+            <h2>Systems &amp; Platforms Shipped</h2>
+          </div>
+          <p class="section-desc">
+            Filter by track to inspect live commercial web builds or backend, automation, and AI engineering work.
+          </p>
         </div>
-    </footer>
+
+        <div class="filter-bar" role="tablist" aria-label="Filter projects by category">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All (6)</button>
+          <button class="filter-btn" data-filter="web" role="tab" aria-selected="false">Web &amp; Client Platforms</button>
+          <button class="filter-btn" data-filter="ai" role="tab" aria-selected="false">Automation, AI &amp; Software</button>
+          <button class="filter-btn" data-filter="brand" role="tab" aria-selected="false">Brand-to-Web Systems</button>
+        </div>
+
+        <div class="bento-grid" id="projectGrid">
+          <!-- Card 1: Launch Case Study #1 -->
+          <article class="project-card featured-card" data-category="web">
+            <div class="card-visual visual-safari">
+              <div class="visual-badge">LIVE PRODUCTION</div>
+              <div class="visual-wireframe">
+                <i data-lucide="compass"></i>
+                <span>sidisafaris.com &middot; Custom Itinerary &amp; SMTP Routing</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="track-label">Web &amp; Client Platforms</span>
+                <span class="case-id">CASE 01</span>
+              </div>
+              <h3>Sidi Safaris</h3>
+              <p>Custom safari itinerary platform built for fast destination discovery, reliable inquiry routing via WP Mail SMTP, and improved search visibility.</p>
+              <div class="tag-row">
+                <span>WordPress</span>
+                <span>Custom Itineraries</span>
+                <span>WP Mail SMTP</span>
+                <span>Technical SEO</span>
+              </div>
+              <div class="card-actions">
+                <a href="case-studies/sidi-safaris.html" class="card-link-primary">
+                  <span>Read Case Study</span>
+                  <i data-lucide="arrow-up-right"></i>
+                </a>
+                <a href="https://sidisafaris.com" target="_blank" rel="noopener noreferrer" class="card-link-secondary">
+                  <span>Live Site</span>
+                  <i data-lucide="external-link"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Launch Case Study #2 -->
+          <article class="project-card featured-card" data-category="web">
+            <div class="card-visual visual-payment">
+              <div class="visual-badge">MULTI-CURRENCY</div>
+              <div class="visual-wireframe">
+                <i data-lucide="credit-card"></i>
+                <span>Paystack KES / USD Checkout &middot; Astra + Gutenberg</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="track-label">Web &amp; Client Platforms</span>
+                <span class="case-id">CASE 02</span>
+              </div>
+              <h3>Organizational Web &amp; Payment Portal</h3>
+              <p>Lightweight, high-readability web platform integrating KES and USD Paystack payment pages, custom domain mailboxes, and automated supporter outreach.</p>
+              <div class="tag-row">
+                <span>Astra &amp; Gutenberg</span>
+                <span>Paystack (KES/USD)</span>
+                <span>Domain Mail</span>
+                <span>Performance</span>
+              </div>
+              <div class="card-actions">
+                <a href="case-studies/payment-portal.html" class="card-link-primary">
+                  <span>Read Case Study</span>
+                  <i data-lucide="arrow-up-right"></i>
+                </a>
+                <a href="case-studies/payment-portal.html#architecture" class="card-link-secondary">
+                  <span>Architecture</span>
+                  <i data-lucide="git-branch"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Launch Case Study #3 -->
+          <article class="project-card" data-category="ai">
+            <div class="card-visual visual-rag">
+              <div class="visual-badge">APPLIED AI</div>
+              <div class="visual-wireframe">
+                <i data-lucide="file-search"></i>
+                <span>Document Chunking &rarr; Vector Retrieval &rarr; Grounded Answer</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="track-label">Automation, AI &amp; Software</span>
+                <span class="case-id">CASE 03</span>
+              </div>
+              <h3>Insurance Policy RAG Assistant</h3>
+              <p>Retrieval-augmented assistant engineered to index complex policy documents and surface grounded clause answers, cutting manual policy lookup time.</p>
+              <div class="tag-row">
+                <span>Python</span>
+                <span>RAG Pipeline</span>
+                <span>Embeddings</span>
+                <span>LLM Grounding</span>
+              </div>
+              <div class="card-actions">
+                <a href="case-studies/policy-rag.html" class="card-link-primary">
+                  <span>Read Case Study</span>
+                  <i data-lucide="arrow-up-right"></i>
+                </a>
+                <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" rel="noopener noreferrer" class="card-link-secondary">
+                  <span>GitHub README</span>
+                  <i data-lucide="github"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4: Launch Case Study #4 -->
+          <article class="project-card" data-category="ai">
+            <div class="card-visual visual-green">
+              <div class="visual-badge">FULL-STACK &amp; AI</div>
+              <div class="visual-wireframe">
+                <i data-lucide="scan-line"></i>
+                <span>Image Capture &rarr; AI Waste Classification &rarr; Impact Log</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="track-label">Automation, AI &amp; Software</span>
+                <span class="case-id">CASE 04</span>
+              </div>
+              <h3>Green Nexus</h3>
+              <p>Sustainability web platform featuring an AI-powered waste scanner that classifies waste items in real time and guides actionable recycling habits.</p>
+              <div class="tag-row">
+                <span>Full-Stack Web</span>
+                <span>AI Waste Scanner</span>
+                <span>REST APIs</span>
+                <span>Responsive UI</span>
+              </div>
+              <div class="card-actions">
+                <a href="case-studies/green-nexus.html" class="card-link-primary">
+                  <span>Read Case Study</span>
+                  <i data-lucide="arrow-up-right"></i>
+                </a>
+                <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" rel="noopener noreferrer" class="card-link-secondary">
+                  <span>GitHub README</span>
+                  <i data-lucide="github"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5: Week-1 Case Study #5 -->
+          <article class="project-card" data-category="ai">
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="track-label">Automation, AI &amp; Software</span>
+                <span class="status-pill">CASE STUDY IN PROGRESS</span>
+              </div>
+              <h3>Automated Form &amp; Email Workflow Engine</h3>
+              <p>Custom Google Apps Script pipeline converting raw form submissions into structured operational logs and instant domain-aliased autoresponses.</p>
+              <div class="tag-row">
+                <span>Google Apps Script</span>
+                <span>Event Triggers</span>
+                <span>Domain Aliases</span>
+                <span>Data Routing</span>
+              </div>
+              <div class="card-actions">
+                <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" rel="noopener noreferrer" class="card-link-secondary">
+                  <span>View Code Notes on GitHub</span>
+                  <i data-lucide="github"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 6: Week-1 Case Study #6 -->
+          <article class="project-card" data-category="brand">
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="track-label">Brand-to-Web Systems</span>
+                <span class="status-pill">CASE STUDY IN PROGRESS</span>
+              </div>
+              <h3>Brand-to-Web Identity &amp; Portal Delivery</h3>
+              <p>End-to-end visual identity system paired with a multi-page WordPress build, embedded Microsoft Forms intake, and SharePoint portal integration.</p>
+              <div class="tag-row">
+                <span>Brand Identity</span>
+                <span>Elementor</span>
+                <span>Microsoft Forms</span>
+                <span>SharePoint</span>
+              </div>
+              <div class="card-actions">
+                <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" rel="noopener noreferrer" class="card-link-secondary">
+                  <span>View GitHub Documentation</span>
+                  <i data-lucide="github"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: How I Approach Every Build -->
+    <section class="section section-alt" id="methodology">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-kicker">02 / ENGINEERING METHODOLOGY</span>
+          <h2>How I Approach Every Build</h2>
+          <p class="section-desc">
+            Every case study documents the real-world constraints, architectural trade-offs, implementation details, and operational outcome—not just surface screenshots.
+          </p>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-step">
+            <div class="step-top">
+              <span class="step-num">01</span>
+              <i data-lucide="alert-circle"></i>
+            </div>
+            <h3>Problem &amp; Constraints</h3>
+            <p>Identify the manual bottleneck, broken user flow, or operational cost—accounting for budget, hosting limits, and non-technical staff workflows.</p>
+          </div>
+
+          <div class="process-step">
+            <div class="step-top">
+              <span class="step-num">02</span>
+              <i data-lucide="layers"></i>
+            </div>
+            <h3>Architecture &amp; Stack Decisions</h3>
+            <p>Choose the right tool for the job—lightweight block themes when speed matters most, or custom scripts, webhooks, and RAG pipelines when logic demands it.</p>
+          </div>
+
+          <div class="process-step">
+            <div class="step-top">
+              <span class="step-num">03</span>
+              <i data-lucide="code-2"></i>
+            </div>
+            <h3>Engineering &amp; Implementation</h3>
+            <p>Solve concrete technical edge cases: multi-currency checkout flows, authenticated SMTP deliverability, legacy code cleanup, and grounded AI retrieval.</p>
+          </div>
+
+          <div class="process-step">
+            <div class="step-top">
+              <span class="step-num">04</span>
+              <i data-lucide="check-circle-2"></i>
+            </div>
+            <h3>Measurable Outcome</h3>
+            <p>Verify real impact: zero manual follow-up emails, reliable payment conversion, faster information retrieval, and maintainable handoff documentation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Engineering Capabilities & Technical Stack -->
+    <section class="section" id="capabilities">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-kicker">03 / CAPABILITIES &amp; STACK</span>
+          <h2>Practical Tools Organized by Outcome</h2>
+        </div>
+
+        <div class="pillars-grid">
+          <div class="pillar-card">
+            <div class="pillar-icon"><i data-lucide="layout-template"></i></div>
+            <h3>Web &amp; CMS Engineering</h3>
+            <p class="pillar-summary">Fast, maintainable websites engineered for conversion, search visibility, and effortless team updates.</p>
+            <ul class="check-list">
+              <li><i data-lucide="check"></i><span>WordPress (Gutenberg &amp; Astra, Elementor &amp; Royal Addons)</span></li>
+              <li><i data-lucide="check"></i><span>Semantic HTML5, Modern CSS3, Vanilla JavaScript</span></li>
+              <li><i data-lucide="check"></i><span>Responsive UI, Technical SEO &amp; Core Web Vitals</span></li>
+              <li><i data-lucide="check"></i><span>WP Mail SMTP, DNS Records &amp; Domain Mailbox Setup</span></li>
+            </ul>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon"><i data-lucide="server-cog"></i></div>
+            <h3>Backend, Automation &amp; AI</h3>
+            <p class="pillar-summary">APIs, scripts, and retrieval pipelines that connect tools and eliminate repetitive manual tasks.</p>
+            <ul class="check-list">
+              <li><i data-lucide="check"></i><span>Python, REST APIs &amp; Webhook Integrations</span></li>
+              <li><i data-lucide="check"></i><span>Paystack Payment Flows (KES &amp; USD)</span></li>
+              <li><i data-lucide="check"></i><span>Google Apps Script Workflow &amp; Email Automation</span></li>
+              <li><i data-lucide="check"></i><span>RAG Pipelines, Legacy Code Refactoring &amp; Git/GitHub</span></li>
+            </ul>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon"><i data-lucide="pen-tool"></i></div>
+            <h3>Product Design &amp; Systems Analysis</h3>
+            <p class="pillar-summary">Bridging technical execution with clear requirements, visual trust, and structured documentation.</p>
+            <ul class="check-list">
+              <li><i data-lucide="check"></i><span>Brand Identity Systems &amp; Cohesive Web Lockups</span></li>
+              <li><i data-lucide="check"></i><span>UI Wireframing, Adobe Photoshop &amp; Canva Production</span></li>
+              <li><i data-lucide="check"></i><span>Systems Analysis &amp; Data-Flow Mapping</span></li>
+              <li><i data-lucide="check"></i><span>Structured GitHub READMEs &amp; Client Handover Guides</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Proof of Execution & Experience Snapshot -->
+    <section class="section section-alt" id="experience">
+      <div class="container exp-layout">
+        <div class="exp-intro">
+          <span class="section-kicker">04 / TRACK RECORD</span>
+          <h2>Execution Across Client Delivery, Codebases &amp; QA</h2>
+          <p>
+            Hands-on experience shipping live commercial platforms, refactoring production legacy code, testing software edge cases, and formalizing computer science fundamentals.
+          </p>
+          <div class="exp-links">
+            <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              <i data-lucide="github"></i>
+              <span>Explore GitHub Repositories</span>
+            </a>
+            <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <i data-lucide="file-text"></i>
+              <span>Download CV (PDF)</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-tag">FREELANCE &amp; CLIENT DELIVERY</span>
+              <h3>Web &amp; Systems Developer</h3>
+              <p>Designed, built, and launched commercial and organizational websites, KES/USD payment integrations, custom itinerary platforms, brand kits, and Google Apps Script automations.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-tag">ENGINEERING &amp; QUALITY ASSURANCE</span>
+              <h3>Software Engineering, Legacy Refactoring &amp; QA</h3>
+              <p>Refactored legacy codebases at Ngomma V.A.S Ltd, built full-stack and AI prototype applications, executed functional bug testing on Test IO, and delivered IT/UI internship work.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-tag">FORMAL TRAINING</span>
+              <h3>BSc. Computer Science &amp; Software Engineering</h3>
+              <p>Pursuing Bachelor of Science in Computer Science (Systems Analysis, Computer Architecture, Linear Algebra) alongside a Diploma in Computer Science and full-time Software Engineering bootcamp training.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6: Focused Collaboration & Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-kicker">05 / COLLABORATE</span>
+          <h2>Let’s Build Something Useful</h2>
+          <p class="section-desc">
+            Tell me what you are building, fixing, or automating. I’ll review your requirements and respond with a clear next step.
+          </p>
+        </div>
+
+        <div class="contact-layout">
+          <div class="tracks-column">
+            <div class="track-card">
+              <div class="track-header">
+                <i data-lucide="briefcase"></i>
+                <h3>For Businesses &amp; Organizations</h3>
+              </div>
+              <p>Need a fast, credible website, Paystack payment or booking flow, brand identity, or automated form and email workflows?</p>
+              <span class="track-note">Typical scope: Web platforms, payment/portal integrations, workflow automation.</span>
+            </div>
+
+            <div class="track-card">
+              <div class="track-header">
+                <i data-lucide="code"></i>
+                <h3>For Engineering Teams &amp; Founders</h3>
+              </div>
+              <p>Looking for a resourceful web/full-stack developer, automation builder, or AI prototype contributor who documents and ships cleanly?</p>
+              <span class="track-note">Open to: Full-stack/frontend roles, technical contracts, and MVP builds.</span>
+            </div>
+
+            <div class="direct-channels">
+              <a href="mailto:willy.kyeni@gmail.com" class="channel-item">
+                <i data-lucide="mail"></i>
+                <span>willy.kyeni@gmail.com</span>
+              </a>
+              <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" rel="noopener noreferrer" class="channel-item">
+                <i data-lucide="github"></i>
+                <span>GitHub</span>
+              </a>
+              <a href="https://linkedin.com/in/YOUR_LINKEDIN" target="_blank" rel="noopener noreferrer" class="channel-item">
+                <i data-lucide="linkedin"></i>
+                <span>LinkedIn</span>
+              </a>
+              <a href="https://wa.me/254759136330" target="_blank" rel="noopener noreferrer" class="channel-item">
+                <i data-lucide="message-square"></i>
+                <span>WhatsApp (+254 759 136 330)</span>
+              </a>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contactForm" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Jane Doe" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="jane@company.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="inquiryType">Inquiry Focus</label>
+              <select id="inquiryType" name="inquiryType">
+                <option value="Web Platform / WordPress">Web Platform / WordPress Build</option>
+                <option value="Automation / Payment / AI">Automation, Payment or AI Integration</option>
+                <option value="Brand-to-Web System">Brand Identity + Website Package</option>
+                <option value="Software Engineering Role">Software Engineering Opportunity</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">What are you building or looking for?</label>
+              <textarea id="message" name="message" rows="4" placeholder="Briefly describe your project, timeline, or role..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full">
+              <span>Send Inquiry</span>
+              <i data-lucide="send"></i>
+            </button>
+            <p class="form-feedback" id="formFeedback" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <span class="brand-text">Willy Kyeni</span>
+        <p class="footer-note">Full-Stack Web Developer &amp; Applied Systems Engineer &middot; Kenya</p>
+      </div>
+      <div class="footer-meta">
+        <span>&copy; <span id="year">2026</span> Willy Kyeni. Built with clean HTML, CSS &amp; JS.</span>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
